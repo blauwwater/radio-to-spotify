@@ -23,7 +23,7 @@ require(magrittr)
 require(rvest)
 require(ggplot2)
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -74,7 +74,7 @@ date <- Sys.Date()
 date
 write.csv(radioplaylistuniek, paste0("C://Users//Kantoor//Radio2playlists//playlist - ", date, ".csv"))
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -93,13 +93,13 @@ write.csv(radioplaylistuniek, paste0("C://Users//Kantoor//Radio2playlists//playl
 #-----------------------------------------------------------------------------------------------------#
 
 #Set spotify API#
-Sys.setenv(SPOTIFY_CLIENT_ID = 'jouwclientidhier')
-Sys.setenv(SPOTIFY_CLIENT_SECRET = 'jouwclientsecrethier')
+Sys.setenv(SPOTIFY_CLIENT_ID = 'clientIDhere')
+Sys.setenv(SPOTIFY_CLIENT_SECRET = 'clientsecrethere')
 access_token <- get_spotify_access_token()
 
 # Client and secret#
-clientID <- "jouwclientidhier"
-secret <- "jouwclientsecrethier"
+clientID <- "clientIDhere"
+secret <- "clientsecrethere"
 
 # Get access token and write this to authorization header #
 response = POST(
@@ -179,7 +179,7 @@ uniekeuri <- uriperurl %>% filter(!is.na(uri))
 uniekeuri$uri <- str_replace_all(uniekeuri$uri, "]", "")
 uniekeuri
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -215,7 +215,7 @@ merge50 <- uniekeuri50 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl50 <- list(c("https://api.spotify.com/v1/playlists/afspeellijstIDhier/tracks?uris=")) %>% paste0(merge50$V1) 
+posturl50 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge50$V1) 
 
 #--------------------------------------#
 #   Prepare Batch 2                    #
@@ -230,9 +230,9 @@ merge100 <- uniekeuri100 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl100 <- list(c("https://api.spotify.com/v1/playlists/afspeellijstIDhier/tracks?uris=")) %>% paste0(merge100$V1) 
+posturl100 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge100$V1) 
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -260,7 +260,7 @@ code2 = code[["credentials"]][["access_token"]]
 usercode <- paste0("Bearer ", code2)
 
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -293,7 +293,7 @@ POST(posturl100,
      body = "{\"texts\":[\"A simple string\"]}")
 
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -367,7 +367,7 @@ uniekeuri <- uriperurl %>% filter(!is.na(uri))
 uniekeuri$uri <- str_replace_all(uniekeuri$uri, "]", "")
 uniekeuri
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -399,7 +399,7 @@ merge50 <- uniekeuri50 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl50 <- list(c("https://api.spotify.com/v1/playlists/afspeellijstIDhier/tracks?uris=")) %>% paste0(merge50$V1) 
+posturl50 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge50$V1) 
 
 #--------------------------------------#
 #   Prepare Batch 2                    #
@@ -414,9 +414,9 @@ merge100 <- uniekeuri100 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl100 <- list(c("https://api.spotify.com/v1/playlists/afspeellijstIDhier/tracks?uris=")) %>% paste0(merge100$V1) 
+posturl100 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge100$V1) 
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -441,7 +441,7 @@ usercode <- paste0("Bearer ", code2)
 
 
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -473,7 +473,7 @@ POST(posturl100,
      body = "{\"texts\":[\"A simple string\"]}")
 
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -550,7 +550,7 @@ uniekeuri <- uriperurl %>% filter(!is.na(uri))
 uniekeuri$uri <- str_replace_all(uniekeuri$uri, "]", "")
 uniekeuri
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -582,7 +582,7 @@ merge50 <- uniekeuri50 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl50 <- list(c("https://api.spotify.com/v1/playlists/afspeellijstIDhier/tracks?uris=")) %>% paste0(merge50$V1) 
+posturl50 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge50$V1) 
 
 #--------------------------------------#
 #   Prepare Batch 2                    #
@@ -597,9 +597,9 @@ merge100 <- uniekeuri100 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl100 <- list(c("https://api.spotify.com/v1/playlists/afspeellijstIDhier/tracks?uris=")) %>% paste0(merge100$V1) 
+posturl100 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge100$V1) 
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -624,7 +624,7 @@ usercode <- paste0("Bearer ", code2)
 
 
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
@@ -656,7 +656,7 @@ POST(posturl100,
      body = "{\"texts\":[\"A simple string\"]}")
 
 #-------------------------------------------------------------------------------------------------------#
-#                                             # EINDE #                                                 #
+#                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
 
 
