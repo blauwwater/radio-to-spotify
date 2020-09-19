@@ -1,7 +1,7 @@
 # radio-scraper-to-spotify
 
 # Working #
-This script retrieves the songs played by radio2 and moves them to a custom Spotify playlist. This way you can listen to the radio without commercials. 
+This script retrieves the songs played by radio x and moves them to a custom Spotify playlist. This way you can listen to the radio without commercials. 
 With a change, the script can certainly also be used for other radio stations.
 #
 
