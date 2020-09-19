@@ -6,7 +6,7 @@ With a change, the script can certainly also be used for other radio stations.
 #
 
 # How does the script work? #
-1. Tracks played by radio2 are retrieved and placed in a data frame. Any duplicate songs played will be removed.
+1. Tracks played by radio x are retrieved and placed in a data frame. Any duplicate songs played will be removed.
 2. An API connection is established with a self-created Spotify app.
 3. The data frame from step 1 is divided into several batches. There is a limit on the number of songs that can be written to a playlist at once. Special characters in artist names and titles are replaced at the same time.
 4. A request url is created for each number.
