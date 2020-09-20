@@ -1,4 +1,4 @@
-# radio-scraper-to-spotify
+# How to: scrape radio songs to Spotify
 
 # Working #
 This script retrieves the songs played by radio x and moves them to a custom Spotify playlist. This way you can listen to the radio without commercials. 
