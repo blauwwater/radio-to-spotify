@@ -1,7 +1,7 @@
 # How to: scrape radio songs to Spotify
 
 # Working #
-This script retrieves the songs played by radio x and moves them to your own Spotify playlist. This way you can listen to the radio without commercials. 
+This script retrieves the songs played by radio 2 and moves them to your own Spotify playlist. This way you can listen to the radio without commercials. 
 With a change, the script can certainly also be used for other radio stations.
 #
 
